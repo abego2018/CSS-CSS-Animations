@@ -7,6 +7,8 @@
   width: 20%;
   margin: auto;
   display: inline-block;
+  transform: translateX(150px);
+  opacity: 0.5;
 }
 
 /****************************************
@@ -18,11 +20,14 @@
   width: 200px;
   height: 200px;
   filter: grayscale(100%);
-
+  transition:2s;
+/* transition:2s; can also go here this will affect all following states*/
 }
 
 .transition-demo img:hover {
-
+  filter:none;
+  transform:scale(1.50) rotate(360deg);
+ 
 }
 
 /****************************************
@@ -35,6 +40,10 @@
   width: 500px;
   margin: auto;
   background-color: palegreen;
+  animation-duration: 5s;
+  animation-name:sale-bar;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 
 }
 
@@ -43,3 +52,6 @@
   75% { background-color: #FF033E; width: 125x }
   100% { background-color: crimson; width: 10px }
 }
+
+
+

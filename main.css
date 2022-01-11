@@ -41,6 +41,7 @@ html {
 .cards {
   display: flex;
   justify-content: space-around;
+  border-radius: 50 50 50 50 ;
 }
 
 a {
